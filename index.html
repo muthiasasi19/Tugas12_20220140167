@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>167 DOM JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form id="pendaftaranForm">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" placeholder="Masukkan nama anda" id="nama">
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" placeholder="Masukkan NIM anda" id="nim">
+            </div>
+            <div class="form-group">
+                <p>Bidang Peminatan:</p>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="programming" value="programming">
+                    <label for="programming">Pemrograman</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+                    <label for="jaringan">Jaringan</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="data" value="data">
+                    <label for="data">Data</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" placeholder="Masukkan alamat lengkapmu" cols="30" rows="5"></textarea>
+                <br>
+
+                <label for="angkatan">Pilih Angkatan</label>
+                <select id="angkatan" name="angkatan">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                </select><br><br>
+
+            <label for="tanggal">Tanggal</label>
+            <input type="date" id="tanggal" name="tanggal" value="2023-06-10"><br><br>
+
+            <button type="button" onclick="kirimData()">Kirim</button>
+
+            </div>
+
+
+        </form>
+    </div>
+    <script src="Js.js"></script>
+</body>
+</html>
